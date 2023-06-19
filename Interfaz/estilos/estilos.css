@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Cabecera*/
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.contenido_logo{
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenido_logo a{
+    text-decoration: none;
+}
+
+.eslogan{
+    margin-left: 130px;
+    color: #1a1a1a;
+}
+
+.logo{
+    width: 250px;
+}
+
+/*sección de navegación*/
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion li{
+    padding: 0 20px;
+    position: relative;
+}
+
+.navegacion li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.navegacion li a:hover,
+.navegacion li a.activo{
+    color: #227e93;
+}
+
+.navegacion li a.activo::after,
+.navegacion li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #227e93;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*Sección de registros*/
+.registros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registros li{
+    padding: 0 10px;
+    position: relative;
+}
+
+.registros li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.registros li a:hover,
+.registros li a.activo{
+    color: #8a321d;
+}
+
+.registros li a.activo::after,
+.registros li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #8a321d;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*Sección de Portada*/
+.portada{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/Interfaz/assets/images/portada.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.portada h4{
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.portada h2{
+    font-size: 50px;
+    font-weight: 1200;
+}
+
+.portada h1{
+    color: #227e93;
+    font-size: 50px;
+    font-weight: 1200;
+    padding-bottom: 15px;
+}
+
+.portada p{
+    padding-bottom: 15px;
+}
+
+.portada button{
+    background-image: url(/Interfaz/assets/images/button.png);
+    background-color: transparent;
+    color: #227e93;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
