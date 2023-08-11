@@ -1,5 +1,33 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.seccion-producto1{
+    padding: 40px 80px;
 }
 
 /* Cabecera*/
@@ -114,7 +142,7 @@
 .portada{
     font-family: 'Roboto', sans-serif;
     background-image: url(/Interfaz/assets/images/portada.png);
-    height: 90vh;
+    height: 50vh;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
@@ -157,4 +185,83 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
+}
+
+/*Sección Productos*/
+
+#producto1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+#producto1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#producto1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#producto1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#producto1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#producto1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#producto1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#producto1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#producto1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#producto1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #227e93;
+}
+
+#producto1 .pro .carrito{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #227e93;
+    border: 1px solid #227e93;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
 }
